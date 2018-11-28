@@ -41,8 +41,8 @@ router.put('/post/:id', async (ctx, next) => {
 });
 router.delete('/post/:id', async (ctx, next) => {
     ctx.status = 204;
-    let result = await Post.delete(ctx.params.id);
-    ctx.body = result
+    let rsult = await Post.delete(ctx.params.id);
+    ctx.body = rsult
 });
 
 
